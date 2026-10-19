@@ -1,0 +1,30 @@
+{
+  "name": "idea-sea",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/seaPhysics.test.mjs",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "android:sync": "npm run build && cap sync android",
+    "android:build": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/android.ps1",
+    "android:install": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/android.ps1 -Install"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.3",
+    "@capacitor/core": "8.5.3",
+    "motion": "^12.23.12",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.3"
+  }
+}

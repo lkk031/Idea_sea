@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>物块轮廓排版检查</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <style>
+      html, body, #root { height: auto; min-height: 100%; overflow: auto; }
+      body { background: #78b8ca; }
+      .specimens { display: grid; grid-template-columns: repeat(2, 356px); gap: 12px; width: max-content; margin: 24px auto; }
+      .specimen { position: relative; height: 250px; border: 1px solid #ffffff55; border-radius: 20px; }
+      .specimen > p { margin: 12px; color: #164253; font: 12px sans-serif; }
+      .specimen .idea-field { top: 28px; bottom: 0; }
+    </style>
+  </head>
+  <body><div id="root"></div><script type="module" src="/tests/shape-preview.tsx"></script></body>
+</html>

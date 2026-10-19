@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.npm-cache/
+.edge-profile/
+.shots/
+.scripts/
+*.local
+.DS_Store
+.codex-backup/
+.android-tools/
+.android-signing/
+artifacts/
+# Device diagnostics and local performance recordings are not release sources.
+diagnostics/
+preview/
+.env
+.env.*
+*.jks
+*.keystore
+keystore.properties
+*.tsbuildinfo
